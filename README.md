@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/rivandraa/nikki_tproxy?style=for-the-badge&logo=github) ![GitHub Tag](https://img.shields.io/github/v/release/rivandraa/nikki_tproxy?style=for-the-badge&logo=github) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/rivandraa/nikki_tproxy/total?style=for-the-badge&logo=github) ![GitHub Repo stars](https://img.shields.io/github/stars/rivandraa/nikki_tproxy?style=for-the-badge&logo=github)
+![GitHub License](https://img.shields.io/github/license/rivandraa/nikki_tproxy?style=for-the-badge&logo=github) ![GitHub Tag](https://img.shields.io/github/v/release/rivandraa/nikki_tproxy?style=for-the-badge&logo=github) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/rivandraa/nikki_tproxy/total?style=for-the-badge&logo=github)
 
 # Nikki TProxy
 
@@ -17,7 +17,7 @@ Transparent Proxy with Mihomo on OpenWrt.
 - Profile Mixin
 - Profile Editor
 - Scheduled Restart
-- File Manager
+- File Manager (must install Tiny File Manager)
 
 The package files will be found under `bin/packages/your_architecture/nikki`.
 
