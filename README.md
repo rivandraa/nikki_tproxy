@@ -17,6 +17,7 @@ Transparent Proxy with Mihomo on OpenWrt.
 - Profile Mixin
 - Profile Editor
 - Scheduled Restart
+- File Manager
 
 The package files will be found under `bin/packages/your_architecture/nikki`.
 
