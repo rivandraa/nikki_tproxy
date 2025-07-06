@@ -1,0 +1,39 @@
+name: Reset Repo History
+
+on:
+  workflow_dispatch:  # Hanya bisa dijalankan manual
+
+permissions:
+  contents: write  # Diperlukan untuk force push
+
+jobs:
+  reset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Ambil semua riwayat agar bisa dihapus
+
+      - name: Reset all history
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          # Buat branch baru tanpa riwayat
+          git checkout --orphan new-root
+
+          # Tambahkan semua file
+          git add .
+
+          # Commit awal
+          git commit -m "-"
+
+          # Hapus branch lama
+          git branch -D main
+
+          # Rename branch baru ke main
+          git branch -m main
+
+          # Force push ke remote
+          git push --force origin main
